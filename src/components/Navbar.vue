@@ -20,13 +20,13 @@
                 <b-dropdown-item href="#">Settings</b-dropdown-item>
                 <b-dropdown-item href="#">Sign Out</b-dropdown-item>
               </b-nav-item-dropdown>
-              <b-nav-form>
-                <b-button variant="light" type="button">
-                  New Deck
-                </b-button>
-              </b-nav-form>
             </b-navbar-nav>
           </b-collapse>
+          <b-nav-form>
+            <b-button variant="light" type="button">
+              New Deck
+            </b-button>
+          </b-nav-form>
         </b-container>
     </b-navbar>
   </div>
