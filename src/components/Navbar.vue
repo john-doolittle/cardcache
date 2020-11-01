@@ -6,7 +6,7 @@
           <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
           <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav>
-              <b-nav-item href="#">Home</b-nav-item>
+              <b-nav-item to="/">Home</b-nav-item>
               <b-nav-item href="#">Browse Decks</b-nav-item>
               <b-nav-item href="#">Search</b-nav-item>
             </b-navbar-nav>
