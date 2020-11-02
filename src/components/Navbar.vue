@@ -23,9 +23,10 @@
             </b-navbar-nav>
           </b-collapse>
           <b-nav-form>
-            <b-button variant="light" type="button" to="/deck">
+            <b-button variant="light" type="button" v-b-modal.modal-1>
               New Deck
             </b-button>
+            <NewDeckModal />
           </b-nav-form>
         </b-container>
     </b-navbar>
@@ -33,7 +34,13 @@
 </template>
 
 <script>
+import NewDeckModal from './NewDeckModal.vue';
+
 export default {
+  name: 'Navbar',
+  components: {
+    NewDeckModal,
+  },
   data() {
     return {
       deck: '',
