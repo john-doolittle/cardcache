@@ -23,7 +23,6 @@ if (cluster.isMaster) {
 
   app.use(parser.json());
   app.use(parser.urlencoded({ extended: true }));
-  app.use(express.static('../public'));
   app.use(cors());
 
   app.listen(PORT, () => {
