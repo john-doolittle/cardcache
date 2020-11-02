@@ -23,7 +23,7 @@
             </b-navbar-nav>
           </b-collapse>
           <b-nav-form>
-            <b-button variant="light" type="button">
+            <b-button variant="light" type="button" to="/deck">
               New Deck
             </b-button>
           </b-nav-form>
