@@ -6,7 +6,7 @@
           <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
           <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav>
-              <b-nav-item href="#">Home</b-nav-item>
+              <b-nav-item to="/">Home</b-nav-item>
               <b-nav-item href="#">Browse Decks</b-nav-item>
               <b-nav-item href="#">Search</b-nav-item>
             </b-navbar-nav>
@@ -15,15 +15,15 @@
               <b-nav-item-dropdown right>
                 <!-- Using 'button-content' slot -->
                 <template slot="button-content"><em>User</em></template>
-                <b-dropdown-item href="#">Profile</b-dropdown-item>
-                <b-dropdown-item href="#">Decks</b-dropdown-item>
+                <b-dropdown-item to="/profile">Profile</b-dropdown-item>
+                <b-dropdown-item href="#">My Decks</b-dropdown-item>
                 <b-dropdown-item href="#">Settings</b-dropdown-item>
                 <b-dropdown-item href="#">Sign Out</b-dropdown-item>
               </b-nav-item-dropdown>
             </b-navbar-nav>
           </b-collapse>
           <b-nav-form>
-            <b-button variant="light" type="button">
+            <b-button variant="light" type="button" to="/deck">
               New Deck
             </b-button>
           </b-nav-form>
