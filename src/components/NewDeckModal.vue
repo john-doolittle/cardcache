@@ -38,7 +38,6 @@
       </b-row>
     </b-container>
     <template #modal-footer>
-      <b-button type="reset" variant="outline-danger">Reset</b-button>
       <b-button type="submit" variant="outline-primary">Create</b-button>
     </template>
   </b-modal>
@@ -62,16 +61,6 @@ export default {
   methods: {
     onSubmit(evt) {
       evt.preventDefault();
-    },
-    onReset(evt) {
-      evt.preventDefault();
-      this.form.name = '';
-      this.form.commander = '';
-      this.form.format = null;
-      this.show = false;
-      this.$nextTick(() => {
-        this.show = true;
-      });
     },
   },
 };
