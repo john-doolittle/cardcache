@@ -54,8 +54,8 @@
       </b-row>
     </b-container>
     <template #modal-footer>
-      <b-button type="reset" variant="outline-danger">Reset</b-button>
-      <b-button type="submit" variant="outline-primary">Create</b-button>
+      <b-button type="reset" variant="outline-danger" v-on:click="onReset">Reset</b-button>
+      <b-button type="submit" variant="outline-primary" v-on:click="onSubmit">Create</b-button>
     </template>
   </b-modal>
 </template>
