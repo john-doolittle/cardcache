@@ -35,14 +35,15 @@
               <b-col cols="7">
                 <b-form-group
                   id="input-group-2"
+                  v-show="form.format === 'Brawl' || form.format === 'Commander'"
                   label="Commander"
                   label-for="input-2"
                 >
                   <b-form-input
-                  id="input-2"
-                  v-model="form.commander"
-                  required
-                  placeholder="Who is your commander?"
+                    id="input-2"
+                    v-model="form.commander"
+                    required
+                    placeholder="Who is your commander?"
                   >
                   </b-form-input>
                 </b-form-group>
@@ -71,7 +72,7 @@ export default {
         commander: '',
         format: null,
       },
-      formats: ['Brawl', { text: 'Commander', value: null }, 'Historic', 'Legacy', 'Modern', 'Pauper', 'Standard', 'Vintage'],
+      formats: [{ value: null, text: '-- Select --' }, 'Brawl', 'Commander', 'Historic', 'Legacy', 'Modern', 'Pauper', 'Standard', 'Vintage'],
       show: true,
     };
   },
