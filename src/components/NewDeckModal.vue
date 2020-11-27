@@ -6,7 +6,7 @@
     <b-container>
       <b-row>
         <b-col>
-          <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+          <b-form v-if="show">
             <b-form-group
               id="input-group-1"
               v-model="form.name"
@@ -54,8 +54,8 @@
       </b-row>
     </b-container>
     <template #modal-footer>
-      <b-button type="reset" variant="outline-danger" v-on:click="onReset">Reset</b-button>
-      <b-button type="submit" variant="outline-primary" v-on:click="onSubmit">Create</b-button>
+      <b-button type="reset" variant="outline-danger" @click="onReset">Reset</b-button>
+      <b-button type="submit" variant="outline-primary" @click="onSubmit">Create</b-button>
     </template>
   </b-modal>
 </template>
