@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <b-navbar toggleable="lg" type="dark" variant="dark">
+  <div className="navbar">
+    <b-navbar toggleable="lg" type="dark">
       <b-container>
           <b-navbar-brand href="#">CardCache</b-navbar-brand>
           <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -38,3 +38,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.navbar {
+  background-color: black;
+}
+</style>
