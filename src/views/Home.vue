@@ -38,3 +38,25 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.home {
+  text-align: center;
+  background-color: blue;
+}
+.jumbotron {
+  background-image: url("https://media.magic.wizards.com/images/featured/EN_HistoryOfMagic_Header.jpg");
+  background-size: cover;
+  color: white;
+}
+footer {
+  background-color: black;
+  color: white;
+}
+#legal {
+  font-size: small;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+}
+</style>
