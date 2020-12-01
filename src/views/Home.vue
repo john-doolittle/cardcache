@@ -1,7 +1,7 @@
 <template>
 <!-- eslint-disable max-len -->
   <div class="home">
-    <b-jumbotron className="jumbotron" fluid>
+    <b-jumbotron class="jumbotron">
       <template #header>
         Ready. Set. Brew.
       </template>
