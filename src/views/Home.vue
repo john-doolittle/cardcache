@@ -2,16 +2,16 @@
 <!-- eslint-disable max-len -->
   <div class="home">
     <b-jumbotron class="jumbotron mb-0" fluid>
-      <template #header>
-        Ready. Set. Brew.
-      </template>
-      <template #lead>
-        Your personal deck building website for Magic: The Gathering®
-      </template>
-      <hr class="my-4">
-      <p>
-        Built by John Doolittle, powered by MongoDB, Express, Vue, Node, and the Scryfall API.
-      </p>
+      <div class="text">
+        <h1 class="heading">Ready. Set. Brew.</h1>
+        <h4>
+          Your personal deck building website for Magic: The Gathering®
+        </h4>
+        <hr class="my-4">
+        <p>
+          Built by John Doolittle, powered by MongoDB, Express, Vue, Node, and the Scryfall API.
+        </p>
+      </div>
     </b-jumbotron>
     <footer>
       <p id="legal">
@@ -48,9 +48,21 @@ footer {
   background-color: blue;
 }
 .jumbotron {
-  background-image: url("https://media.magic.wizards.com/images/featured/EN_HistoryOfMagic_Header.jpg");
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url("https://media.magic.wizards.com/images/featured/EN_HistoryOfMagic_Header.jpg");
   background-size: cover;
   color: white;
+  height: 100vh;
+}
+.heading {
+  font-size: 100px;
+}
+.text {
+  position: relative;
+  top: 15vh;
 }
 #legal {
   font-size: small;
