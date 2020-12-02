@@ -1,9 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
-import Profile from '../views/Profile.vue';
 import Deck from '../views/Deck.vue';
-import Login from '../views/Login.vue';
 
 Vue.use(VueRouter);
 
@@ -14,19 +12,9 @@ const routes = [
     component: Home,
   },
   {
-    path: '/profile',
-    name: 'Profile',
-    component: Profile,
-  },
-  {
     path: '/deck',
     name: 'Deck',
     component: Deck,
-  },
-  {
-    path: '/login',
-    name: 'Login',
-    component: Login,
   },
 ];
 
