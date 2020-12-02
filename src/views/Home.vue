@@ -1,17 +1,16 @@
 <template>
 <!-- eslint-disable max-len -->
   <div class="home">
-    <b-jumbotron class="jumbotron">
+    <b-jumbotron class="jumbotron mb-0" fluid>
       <template #header>
         Ready. Set. Brew.
       </template>
       <template #lead>
-        We are a deck building website for Magic: The Gathering®
+        Your personal deck building website for Magic: The Gathering®
       </template>
       <hr class="my-4">
       <p>
-        It uses utility classes for typography and spacing to space content out within the larger
-        container.
+        Built by John Doolittle, powered by MongoDB, Express, Vue, Node, and the Scryfall API.
       </p>
     </b-jumbotron>
     <footer>
@@ -39,7 +38,11 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+footer {
+  background-color: black;
+  color: white;
+}
 .home {
   text-align: center;
   background-color: blue;
@@ -49,14 +52,12 @@ export default {
   background-size: cover;
   color: white;
 }
-footer {
-  background-color: black;
-  color: white;
-}
 #legal {
   font-size: small;
   margin-left: 20px;
   margin-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: left;
 }
 </style>
