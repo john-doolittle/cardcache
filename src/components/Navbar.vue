@@ -12,7 +12,7 @@
           </b-collapse>
           <b-nav-form>
             <b-button variant="light" type="button" v-b-modal.modal-1>
-              New Deck
+              <b-icon icon="plus" scale="1.2" shift-v="1.5" /> New Deck
             </b-button>
             <NewDeckModal />
           </b-nav-form>
@@ -42,5 +42,8 @@ export default {
 <style scoped>
 .navbar {
   background-color: black;
+}
+button {
+  font-weight: bold;
 }
 </style>
