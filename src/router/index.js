@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Deck from '../views/Deck.vue';
+import List from '../views/List.vue';
 
 Vue.use(VueRouter);
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/deck',
     name: 'Deck',
     component: Deck,
+  },
+  {
+    path: '/list',
+    name: 'List',
+    component: List,
   },
 ];
 
